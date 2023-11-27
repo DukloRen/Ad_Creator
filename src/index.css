@@ -1,3 +1,11 @@
+header{
+    background-color: rgb(27, 148, 140);
+}
+
+button{
+    width: 10em;
+}
+
 .elerhetosegek{
     background-color: rgb(27, 148, 140);
     padding: 15px;
@@ -26,4 +34,4 @@
     top:55px;
     bottom:55px;
     left: 8%;
-  }
+}
