@@ -1,3 +1,11 @@
+header{
+    background-color: rgb(27, 148, 140);
+}
+
+button{
+    width: 10em;
+}
+
 .footer{
     background-color: rgb(27, 148, 140);
     text-align: left;
