@@ -2,71 +2,86 @@
 <html lang="hu">
   <head>
     <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Főoldal</title>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/index.js"></script>
   </head>
   
   <body>
-
+    <!--------------------------------------------------------------------------HEADER START------------------------------------------------------------->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center p-2">
+            <h1>RosszFogás</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------------------------------------------------------------------------HEADER END---------------------------------------------------------->
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
 
         </div>
-
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-    <script type="module" src="/src/index.js"></script>
     
-  </body>
+    <!--------------------------------------------------------------------------FOOTER START------------------------------------------------------------->
+    <footer>
+      <div class="container-fluid">
+        <div class="row fixed-bottom">
 
-<!--------------------------------------------------------------------------------------FOOTER------------------------------------------------------------------------->
-  <footer>
-    <div class="container-fluid">
-      <div class="row fixed-bottom">
-
-
-        <div class="col-lg-1 col-md-1 col-sm-1 elerhetosegek">
-          <div class="elerhetosegek_image_1">
-            <img src="/images/monke.jpg" alt="logo" width="100" height="100">
-            <div class="vertical_line"></div>
+          <div class="col-lg-2 elerhetosegek p-lg-5">
+            <div class="p-5">
+              <img src="/images/logo.jpg" alt="logo" width="100" height="100" class="mx-auto d-block">
             </div>
-        </div>
-
-
-        <div class="col-lg-9 col-md-9 col-sm-9 elerhetosegek">
-          <div class="elerhetosegek_text">
-            <h6><b>Elérhetőségek</b></h6>
-            <ul>
-              <li><b>Telefon: +36 30 123 4567</b></li>
-              <li><b>E-mail: rosszfogas@gmail.com</b></li>
-              <li><b>Készítette: Bárány Benedek, Tóth Kevin</b></li>
-            </ul>
-          <p><b>Szerzői jogi védelem alatt álló oldal.
-            A honlapon elhelyezett szöveges és képi anyagok, arculati és tartalmi elemek (pl. betűtípusok, gombok, linkek, ikonok, szöveg, kép, grafika, logo stb.) 
-            felhasználása, másolása, terjesztése, továbbítása - akár részben, vagy egészben - kizárólag a RosszFogás előzetes, írásos beleegyezésével lehetséges.</b></p>
-            <button type="button" class="btn btn-danger" id="advert_create">Hirdetés készítése</button>         
           </div>
-      </div>
 
 
-      <div class="col-lg-2 col-md-2 col-sm-2 elerhetosegek">
-        <div class="elerhetosegek_image_2">
-          <a href="https://granitbank.hu/" target="_blank"><img src="/images/granit_bank.png" alt="logo" width="80" height="80"></a>
-          <a href="https://www.mastercard.hu/hu-hu.html" target="_blank"><img src="/images/mastercard.jpg" alt="logo" width="80" height="80"></a>
-          <a href="https://www.mbhbank.hu/" target="_blank"><img src="/images/mbh_bank.jpg" alt="logo" width="80" height="80"></a>
-          <a href="https://www.paypal.com/hu/home" target="_blank"><img src="/images/paypal.png" alt="logo" width="80" height="80"></a>
+          <div class="col-lg-8 elerhetosegek p-lg-5">
+            <h6><b>Elérhetőségek</b></h6>
+              <ul>
+                <li><b>Telefon: +36 30 123 4567</b></li>
+                <li><b>E-mail: rosszfogas@gmail.com</b></li>
+                <li><b>Készítette: Bárány Benedek, Tóth Kevin</b></li>
+              </ul>
+            <p><b>
+              Szerzői jogi védelem alatt álló oldal.
+              A honlapon elhelyezett szöveges és képi anyagok, arculati és tartalmi elemek (pl. betűtípusok, gombok, linkek, ikonok, szöveg, kép, grafika, logo stb.) 
+              felhasználása, másolása, terjesztése, továbbítása - akár részben, vagy egészben - kizárólag a RosszFogás előzetes, írásos beleegyezésével lehetséges.
+            </b></p>
+            <button type="button" class="btn btn-danger float-lg-start mx-auto d-block" id="advert_create">Hirdetés készítése</button>
+          </div>
+
+          <div class="col-lg-2 elerhetosegek p-lg-5">
+            <div class="row">
+
+              <div class="col-lg-6 col p-2">
+                <a href="https://granitbank.hu/" target="_blank"><img src="/images/granit_bank.png" alt="logo" width="80" height="80" class="rounded float-end"></a>
+              </div>
+
+              <div class="col-lg-6 col p-2">
+                <a href="https://www.mastercard.hu/hu-hu.html" target="_blank"><img src="/images/mastercard.jpg" alt="logo" width="80" height="80" class="rounded float-start"></a>
+              </div>
+
+              <div class="col-lg-6 col p-2">
+                <a href="https://www.mbhbank.hu/" target="_blank"><img src="/images/mbh_bank.jpg" alt="logo" width="80" height="80" class="rounded float-end"></a>
+              </div>
+
+              <div class="col-lg-6 col p-2">
+                <a href="https://www.paypal.com/hu/home" target="_blank"><img src="/images/paypal.png" alt="logo" width="80" height="80" class="rounded float-start"></a>
+              </div>
+              
+            </div>
+          </div>
+
         </div>
       </div>
-
-
-    </div>
-  </div>
-  </footer>
-<!--------------------------------------------------------------------------------------FOOTER END---------------------------------------------------------------------->
-
-
+    </footer>
+    <!--------------------------------------------------------------------------FOOTER END---------------------------------------------------------->
+  </body>
 </html>

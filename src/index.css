@@ -8,30 +8,8 @@ button{
 
 .elerhetosegek{
     background-color: rgb(27, 148, 140);
-    padding: 15px;
     text-align: left;
     font-size: 15px;
     font-weight: 150;
     color: #000000;
-    transition: 1s;
-}
-.elerhetosegek_text{
-    padding-left: 10px;
-    line-height: 20px;
-}
-.elerhetosegek_image_1{
-    padding: 50px;
-    transition: 2s;
-}
-.elerhetosegek_image_2{
-    padding-top: 60px;
-    transition: 2s;
-}
-.vertical_line{
-    border-left: 2px solid black;
-    height: 120px;
-    position: absolute;
-    top:55px;
-    bottom:55px;
-    left: 8%;
 }
