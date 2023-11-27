@@ -1,15 +1,8 @@
-header{
-    background-color: rgb(27, 148, 140);
-}
-
-button{
-    width: 10em;
-}
-
-.elerhetosegek{
+.footer{
     background-color: rgb(27, 148, 140);
     text-align: left;
     font-size: 15px;
     font-weight: 150;
     color: #000000;
+    transition: 1s;
 }
