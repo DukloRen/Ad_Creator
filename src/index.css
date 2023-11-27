@@ -1,15 +1,27 @@
-.footer{
-    background-color: rgb(27, 148, 140);
-    padding: 15px;
-    text-align: left;
+.header{
+    background-color: rgb(32, 189, 178);
+    text-align: center;
+    color: #000000;
+    transition: 1s;
+}
+.header_text{
+    padding: 10px;
+    line-height: 20px;
     font-size: 15px;
     font-weight: 150;
+}
+.footer{
+    background-color: rgb(32, 189, 178);
+    padding: 15px;
+    text-align: left;
     color: #000000;
     transition: 1s;
 }
 .footer_text{
     padding-left: 10px;
     line-height: 20px;
+    font-size: 15px;
+    font-weight: 150;
 }
 .footer_image_1{
     padding: 50px;
