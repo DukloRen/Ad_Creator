@@ -8,35 +8,107 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center">
+
+        <header class="row">
+            <div class="col-12 text-center p-2">
                 <h1>Hirdetés feladás</h1>
             </div>
-        </div>
+        </header>
+
         <div class="row">
-            <div class="col-sm-6 text-end">
-                <label for="inputTitle">Cím</label>
+            <div class="col-md-6 pt-2">
+                <h2 class="text-center">Hirdetés adatai</h2>
+
+                <div class="form-group row pt-2">
+                    <label for="inputTitle" class="col-lg-2 col-form-label text-lg-end">Cím</label>
+                    <div class="col-lg-10">
+                        <input type="text" id="inputTitle" class="form-control" placeholder="Hirdetés címe">
+                    </div>
+                </div>
+        
+                <div class="form-group row pt-2">
+                    <label for="inputImage" class="col-lg-2 col-form-label text-lg-end">Kép</label>
+                    <div class="col-lg-10">
+                        <input type="url" id="inputImage" class="form-control" placeholder="https://imgur.com">
+                    </div>
+                </div>
+        
+                <div class="form-group row pt-2">
+                    <label for="inputDescription" class="col-lg-2 col-form-label text-lg-end">Leírás</label>
+                    <div class="col-lg-10">
+                        <textarea id="inputDescription" class="form-control" placeholder="Eladásra kínálok egy..." rows="5"></textarea>
+                    </div>
+                </div>
+        
+                <div class="form-group row pt-2">
+                    <label for="inputCategory" class="col-lg-2 col-form-label text-lg-end">Kategória</label>
+                    <div class="col-lg-10">
+                        <select id="inputCategory" class="form-select">
+                            <option value="fashion" selected>Divat</option>
+                            <option value="household">Háztartás, otthon</option>
+                            <option value="sport">Szabadidő, sport</option>
+                            <option value="immovable">Ingatlan</option>
+                            <option value="vehicle">Jármű</option>
+                            <option value="electronics">Elektronika, műszaki cikk</option>
+                            <option value="other">Egyéb</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group row pt-2">
+                    <label for="inputPrice" class="col-lg-2 col-form-label text-lg-end">Ár</label>
+                    <div class="col-lg-10">
+                        <input type="number" id="inputPrice" class="form-control" placeholder="5000 Ft">
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <input type="text" id="inputTitle">
+
+            <div class="col-md-6 pt-2">
+                <h2 class="text-center">Hirdető adatai</h2>
+
+                <div class="form-group row pt-2">
+                    <label for="inputSeller" class="col-lg-2 col-form-label text-lg-end">Teljes név</label>
+                    <div class="col-lg-10">
+                        <input type="text" id="inputSeller" class="form-control" placeholder="Gipsz Jakab">
+                    </div>
+                </div>
+
+                <div class="form-group row pt-2">
+                    <label for="inputPhoneNumber" class="col-lg-2 col-form-label text-lg-end">Telefonszám</label>
+                    <div class="col-lg-10">
+                        <input type="text" id="inputPhoneNumber" class="form-control" placeholder="+36 30 333 3333">
+                    </div>
+                </div>
+
+                <div class="form-group row pt-2">
+                    <label for="inputEmail" class="col-lg-2 col-form-label text-lg-end">E-mail cím</label>
+                    <div class="col-lg-10">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="example@gmail.com">
+                    </div>
+                </div>
+
+                <div class="form-check row pt-5">
+                    <div class="col-12">
+                        <input type="checkbox" id="inputTAC" class="form-check-input">
+                        <label for="inputTAC" class="form-check-label text-left">
+                            Elolvastam és elfogadom a RosszFogás Felhasználói szabályzatát és Adatvédelmi szabályzatát.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-flex col-6 p-md-5 p-2 justify-content-center">
+                        <button type="submit" class="btn btn-danger">Hirdetés feladása</button>
+                    </div>
+
+                    <div class="d-flex col-6 p-md-5 p-2 justify-content-center">
+                        <button type="button" class="btn btn-danger">Mégse</button>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <div class="row">
-            <div class="col-sm-6 text-end">
-                <label for="inputImage">Kép</label>
-            </div>
-            <div class="col-sm-6">
-                <input type="text" id="inputImage">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 text-end">
-                <label for="inputImage">Kép</label>
-            </div>
-            <div class="col-sm-6">
-                <input type="text" id="inputImage">
-            </div>
-        </div>
+
     </div>
 </body>
 </html>
