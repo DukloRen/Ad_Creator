@@ -1,5 +1,5 @@
 /*----------------------------------------------HEADER--------------------------------------*/
-.header{
+header{
     background-color: rgb(32, 189, 178);
     position:relative;
     width: 100%;
@@ -16,7 +16,7 @@
     width:100%;
     display: block;
 }
-.navigation{
+nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -86,20 +86,20 @@
 .toggle-menu{
     display: none;
 }
-.navigation input:checked ~ .hamburger{
+nav input:checked ~ .hamburger{
     background: transparent;
 }
-.navigation input:checked ~ .hamburger:before{
+nav input:checked ~ .hamburger:before{
     top: 0;
     transform: rotate(-45deg);
     width:30px;
 }
-.navigation input:checked ~ .hamburger:after{
+nav input:checked ~ .hamburger:after{
     top: 0;
     transform: rotate(45deg);
     width:30px;
 }
-.navigation input:checked ~ .menu {
+nav input:checked ~ .menu {
     right: 0;
     box-shadow: -20px 0 40px rgba(0,0,0,0.03);
 }
@@ -108,7 +108,7 @@
     .toggle-menu {
         display: block;
     }
-    .header{
+    header{
         padding: 10px 20px;
     }
     .menu{
@@ -136,8 +136,7 @@
 /*----------------------------------------------HEADER END--------------------------------------*/
 
 /*----------------------------------------------FOOTER------------------------------------------*/
-.footer{
-    /*display: none;                            /* Hide the footer (mi a *csúnya szó*, a copilot még a comment szövegét is kiolvassa a gondolataimból)*/
+footer div{
     background-color: rgb(32, 189, 178);
     text-align: left;
     font-size: 15px;
@@ -146,7 +145,7 @@
     text-align: left;
     color: #000000;
 }
-.footer button{
+button{
     width: 10em;
 }
 /*----------------------------------------------FOOTER END--------------------------------------*/
