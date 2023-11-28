@@ -138,10 +138,12 @@ nav input:checked ~ .menu {
 button{
     width: 10em;
 }
+body{
+    background-color: rgb(32, 189, 178);
+}
 
 /*----------------------------------------------FOOTER------------------------------------------*/
 footer div{
-    background-color: rgb(32, 189, 178);
     text-align: left;
     font-size: 15px;
     font-weight: 150;
