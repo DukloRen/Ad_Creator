@@ -7,14 +7,32 @@
     <script type="module" src="/src/main.ts"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <!--------------------------------------------------------------------------------------HEADER---------------------------------------------------------------------------->    
+    <header>
 
-        <header class="row">
-            <div class="col-12 text-center p-2">
-                <h1>Hirdetés feladás</h1>
-            </div>
-        </header>
+        <div class="logo">
+          <a href="#" id="logo_button">
+            <img src="/images/logo.jpg" alt="logo" width="100" height="100" class="mx-auto d-block">
+          </a>
+        </div>
+  
+        <nav>
+          <input type="checkbox" class="toggle-menu">
+          <div class="hamburger"></div>       
+          <ul class="menu">
+            <li><a href="#" id="kezdolap_button">Kezdőlap</a></li>
+            <li><a href="#" id="advert_create_link">Hirdetés Készítő</a></li>
+            <li><a href="#">Adatbázis</a></li>
+            <li><a href="#">Regisztráció</a></li>
+            <li><a href="#">Bejelentkezés</a></li>
+          </ul>
+        </nav>
+  
+    </header>
+    <!--------------------------------------------------------------------------------------HEADER END------------------------------------------------------------------------>
 
+    <!--------------------------------------------------------------------------------------BODY------------------------------------------------------------------------------>
+    <div class="container-fluid py-5">
         <div class="row">
             <div class="col-md-6 pt-2">
                 <h2 class="text-center">Hirdetés adatai</h2>
@@ -98,17 +116,69 @@
 
                 <div class="row">
                     <div class="d-flex col-6 p-md-5 p-2 justify-content-center">
-                        <button type="submit" class="btn btn-danger">Hirdetés feladása</button>
+                        <button type="submit" class="btn btn-danger" id="public_advert">Hirdetés feladása</button>
                     </div>
 
                     <div class="d-flex col-6 p-md-5 p-2 justify-content-center">
-                        <button type="button" class="btn btn-danger">Mégse</button>
+                        <button type="button" class="btn btn-danger" id="back_button">Mégse</button>
                     </div>
                 </div>
             </div>
 
         </div>
-
     </div>
+    <!--------------------------------------------------------------------------------------BODY END------------------------------------------------------------------------>
+    <!--------------------------------------------------------------------------FOOTER START---------------------------------------------------------------------------------->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+    
+            <div class="col-lg-2 p-lg-4">
+                <div class="p-5">
+                <img src="/images/logo.jpg" alt="logo" width="100" height="100" class="mx-auto d-block">
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-8 p-lg-4">
+                <h6><b>Elérhetőségek</b></h6>
+                <ul>
+                    <li><b>Telefon: +36 30 123 4567</b></li>
+                    <li><b>E-mail: rosszfogas@gmail.com</b></li>
+                    <li><b>Készítette: Bárány Benedek, Tóth Kevin</b></li>
+                </ul>
+                <p><b>
+                Szerzői jogi védelem alatt álló oldal.
+                A honlapon elhelyezett szöveges és képi anyagok, arculati és tartalmi elemek (pl. betűtípusok, gombok, linkek, ikonok, szöveg, kép, grafika, logo stb.) 
+                felhasználása, másolása, terjesztése, továbbítása - akár részben, vagy egészben - kizárólag a RosszFogás előzetes, írásos beleegyezésével lehetséges.
+                </b></p>
+            </div>
+    
+            <div class="col-lg-2 p-lg-4">
+                <div class="row">
+    
+                <div class="col-lg-6 col p-2">
+                    <a href="https://granitbank.hu/" target="_blank"><img src="/images/granit_bank.png" alt="logo" width="80" height="80" class="rounded float-end"></a>
+                </div>
+    
+                <div class="col-lg-6 col p-2">
+                    <a href="https://www.mastercard.hu/hu-hu.html" target="_blank"><img src="/images/mastercard.jpg" alt="logo" width="80" height="80" class="rounded float-start"></a>
+                </div>
+    
+                <div class="col-lg-6 col p-2">
+                    <a href="https://www.mbhbank.hu/" target="_blank"><img src="/images/mbh_bank.jpg" alt="logo" width="80" height="80" class="rounded float-end"></a>
+                </div>
+    
+                <div class="col-lg-6 col p-2">
+                    <a href="https://www.paypal.com/hu/home" target="_blank"><img src="/images/paypal.png" alt="logo" width="80" height="80" class="rounded float-start"></a>
+                </div>
+                
+                </div>
+            </div>
+    
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------------------------------------------------FOOTER END------------------------------------------------------------------------------------>
 </body>
 </html>

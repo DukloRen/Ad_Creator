@@ -135,17 +135,17 @@ nav input:checked ~ .menu {
 }
 /*----------------------------------------------HEADER END--------------------------------------*/
 
+button{
+    width: 10em;
+}
+
 /*----------------------------------------------FOOTER------------------------------------------*/
 footer div{
     background-color: rgb(32, 189, 178);
     text-align: left;
     font-size: 15px;
     font-weight: 150;
-    padding: 15px;
     text-align: left;
     color: #000000;
-}
-button{
-    width: 10em;
 }
 /*----------------------------------------------FOOTER END--------------------------------------*/
