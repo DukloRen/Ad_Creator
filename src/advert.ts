@@ -24,8 +24,4 @@ export class Advert implements AdvertInterface {
         this.email = email;
         this.terms_and_conditions = terms_and_conditions;
     }
-
-    /*szuletesnap(): void {
-        this.eletkor++;
-    }*/
 }
