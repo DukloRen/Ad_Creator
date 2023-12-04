@@ -1,5 +1,9 @@
 import  { AdvertInterfaceDTO }  from "../interfaces/advert_interfaceDTO.ts";
 
+const regexName = /^[a-zöüóőúűéáí]+ [a-z öüóőúűéáí]+$/i;
+const regexEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+const regexPhonenumber = /^\+[0-9 ]{11,}$/;
+
 export class Advert implements AdvertInterfaceDTO {
     //public id: number;
     public title: string;
@@ -11,9 +15,7 @@ export class Advert implements AdvertInterfaceDTO {
     public phonenumber: string;
     public email: string;
     public terms_and_conditions: boolean;
-    private regexName = /^[a-zöüóőúűéáí]+ [a-z öüóőúűéáí]+$/i;
-    private regexEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
-    private regexPhonenumber = /^\+[0-9 ]{11,}$/;
+
 
     constructor(/*id: number,*/title: string, image: string, description: string, category: string,
         price: number, seller: string, phonenumber: string, email: string, terms_and_conditions: boolean) {
@@ -28,15 +30,15 @@ export class Advert implements AdvertInterfaceDTO {
             throw new Error("Adjon árat a hirdetéshez!");
         } else if (seller.trim() == "") {
             throw new Error("Adja meg a nevét!");
-        } else if (!this.regexName.test(seller)) {
+        } else if (!regexName.test(seller)) {
             throw new Error("Érvénytelen név formátum!");
         } else if (phonenumber.trim() == "") {
             throw new Error("Adja meg telefonszámát!");
-        } else if (!this.regexPhonenumber.test(phonenumber)) {
+        } else if (!regexPhonenumber.test(phonenumber)) {
             throw new Error("Érvénytelen telefonszám formátum! (pl.: +36 30 333 3333)");
         } else if (email.trim() == "") {
             throw new Error("Adja meg e-mail címét! (pl.: example@gmail.com)");
-        } else if (!this.regexEmail.test(email)) {
+        } else if (!regexEmail.test(email)) {
             throw new Error("Érvénytelen e-mail cím formátum!");
         } else if (terms_and_conditions == false) {
             throw new Error("A hirdetés feladásához fogadja el a Felhasználói- és az Adatvédelmi szabályzatot!");
