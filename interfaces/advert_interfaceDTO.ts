@@ -1,5 +1,4 @@
-export default interface AdvertInterface {
-    id: number;
+export interface AdvertInterfaceDTO {
     title: string;
     image: string;
     description: string;

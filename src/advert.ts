@@ -1,7 +1,7 @@
-import { AdvertInterface } from "../interfaces/advert_interface.ts";
+import  { AdvertInterfaceDTO }  from "../interfaces/advert_interfaceDTO.ts";
 
-export class Advert implements AdvertInterface {
-    public id: number;
+export class Advert implements AdvertInterfaceDTO {
+    //public id: number;
     public title: string;
     public image: string;
     public description: string;
@@ -15,7 +15,7 @@ export class Advert implements AdvertInterface {
     private regexEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
     private regexPhonenumber = /^\+[0-9 ]{11,}$/;
 
-    constructor(id: number, title: string, image: string, description: string, category: string,
+    constructor(/*id: number,*/title: string, image: string, description: string, category: string,
         price: number, seller: string, phonenumber: string, email: string, terms_and_conditions: boolean) {
         
         if (title.trim() == "") {
@@ -41,7 +41,7 @@ export class Advert implements AdvertInterface {
         } else if (terms_and_conditions == false) {
             throw new Error("A hirdetés feladásához fogadja el a Felhasználói- és az Adatvédelmi szabályzatot!");
         } else {
-            this.id = id;
+            //this.id = id;
             this.title = title;
             this.image = image;
             this.description = description;
