@@ -4,7 +4,9 @@ import './index.css'
 import AdvertInterface from '../interfaces/advert_interface.ts'
 import {AdvertInterfaceDTO} from '../interfaces/advert_interfaceDTO.ts'
 
-
+/**
+ * 
+ */
 export class AdvertService {
     api_url = "https://retoolapi.dev/zmRnPM/advert_test_api";
 
@@ -71,25 +73,5 @@ export async function listAdverts() {
   });
   advertTable.append(...tableRows);
 }
-
-/*export async function addAdvert() {
-  const nameInput = document.getElementById("name") as HTMLInputElement;
-  const emailInput = document.getElementById("email") as HTMLInputElement;
-  const jobInput = document.getElementById("job") as HTMLInputElement;
-  const name = nameInput.value;
-  const email = emailInput.value;
-  const job = jobInput.value;
-
-  const advert = {
-    name: name,
-    email: email,
-    job: job,
-  };
-  await advertService.add(advert);
-  nameInput.value = "";
-  emailInput.value = "";
-  jobInput.value = "";
-  listAdverts();
-}*/
 
 //https://retoolapi.dev/zmRnPM/advert_test_api
