@@ -1,5 +1,3 @@
-import './index.css'
-
 const advert_create_link = document.getElementById("advert_create_link") as HTMLLinkElement;
 const advert_create_button = document.getElementById("advert_create_button") as HTMLButtonElement;
 const logo_button = document.getElementById("logo_button") as HTMLLinkElement;

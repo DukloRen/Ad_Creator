@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
+import './index.css'
 import AdvertInterface from '../interfaces/advert_interface.ts'
 import {AdvertInterfaceDTO} from '../interfaces/advert_interfaceDTO.ts'
 

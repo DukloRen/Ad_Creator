@@ -1,4 +1,3 @@
-import './index.css'
 import './advert_creator.css'
 import { Advert } from "./advert.ts";
 import { AdvertService } from "./main.ts";
