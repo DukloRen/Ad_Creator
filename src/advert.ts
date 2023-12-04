@@ -35,7 +35,7 @@ export class Advert implements AdvertInterfaceDTO {
         } else if (!this.regexPhonenumber.test(phonenumber)) {
             throw new Error("Érvénytelen telefonszám formátum! (pl.: +36 30 333 3333)");
         } else if (email.trim() == "") {
-            throw new Error("Adja meg e-mail címét!");
+            throw new Error("Adja meg e-mail címét! (pl.: example@gmail.com)");
         } else if (!this.regexEmail.test(email)) {
             throw new Error("Érvénytelen e-mail cím formátum!");
         } else if (terms_and_conditions == false) {

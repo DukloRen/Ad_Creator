@@ -34,7 +34,7 @@
 
     <!--------------------------------------------------------------------------------------BODY------------------------------------------------------------------------------>
     <div class="container-fluid py-5 bg-white">
-        <div class="row">
+        <form class="row" id="formAdvertCreate">
             <div class="col-md-6 pt-2">
                 <h2 class="text-center">Hirdetés adatai</h2>
 
@@ -115,6 +115,12 @@
                     </div>
                 </div>
 
+                <div class="row pt-5">
+                    <div class="col-lg-12">
+                        <p id="errorMessage"></p>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="d-flex col-6 p-md-5 p-2 justify-content-center">
                         <button type="submit" class="btn btn-danger" id="public_advert">Hirdetés feladása</button>
@@ -126,7 +132,7 @@
                 </div>
             </div>
 
-        </div>
+        </form>
     </div>
     <!--------------------------------------------------------------------------------------BODY END------------------------------------------------------------------------>
     <!--------------------------------------------------------------------------FOOTER START---------------------------------------------------------------------------------->
