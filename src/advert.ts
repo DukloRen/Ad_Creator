@@ -38,6 +38,8 @@ export class Advert implements AdvertInterface {
             throw new Error("Adja meg e-mail címét!");
         } else if (!this.regexEmail.test(email)) {
             throw new Error("Érvénytelen e-mail cím formátum!");
+        } else if (terms_and_conditions == false) {
+            throw new Error("A hirdetés feladásához fogadja el a Felhasználói- és az Adatvédelmi szabályzatot!");
         } else {
             this.id = id;
             this.title = title;
