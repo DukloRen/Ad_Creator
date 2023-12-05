@@ -20,7 +20,7 @@ kezdolap_link.onclick = function() {
   window.location.href = "./index.html";
 }
 adatbazis_link.onclick = function() {
-  window.location.href = "https://retoolapi.dev/zmRnPM/advert_test_api";
+  window.open("https://retoolapi.dev/zmRnPM/advert_test_api", "_blank");
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
