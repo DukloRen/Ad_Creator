@@ -10,30 +10,25 @@ const adatbazis_link = document.getElementById("adatbazis_link") as HTMLLinkElem
 
 
 advert_create_link.onclick = () => {
-  if (window.confirm("Biztosan félbeszakítja a hirdetés feladást?")) {
-    window.location.href = "./advert_creator.html";
-  }
+  window.location.href = "./advert_creator.html";
 }
 logo_button.onclick = () => {
-  if (window.confirm("Biztosan félbeszakítja a hirdetés feladást?")) {
-    window.location.href = "./index.html";
-  }
+  window.location.href = "./index.html";
 }
 kezdolap_link.onclick = () => {
-  if (window.confirm("Biztosan félbeszakítja a hirdetés feladást?")) {
-    window.location.href = "./index.html";
-  }
+  window.location.href = "./index.html";
 }
 back_button.onclick = () => {
-  if (window.confirm("Biztosan félbeszakítja a hirdetés feladást?")) {
-    window.location.href = "./index.html";
-  }
+  window.location.href = "./index.html";
 }
 adatbazis_link.onclick = () => {
-  if (window.confirm("Biztosan félbeszakítja a hirdetés feladást?")) {
-    window.location.href = "https://retoolapi.dev/zmRnPM/advert_test_api";
-  }
+  window.location.href = "https://retoolapi.dev/zmRnPM/advert_test_api";
 }
+
+window.addEventListener("beforeunload", (e) => {
+  e.preventDefault();
+  e.returnValue = "Biztosan félbeszakítja a hirdetés feladást?";
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const formAdvertCreate = document.getElementById("formAdvertCreate") as HTMLFormElement;
