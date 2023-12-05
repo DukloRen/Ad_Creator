@@ -24,29 +24,50 @@ adatbazis_link.onclick = function() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const advertTable = document.getElementById("advert") as HTMLTableElement;
-  advertTable.textContent = "";
-  const people = await advertService.getAll();
-  const tableRows = people.map((advert) => {
-    const tr = document.createElement("tr");
-    const titleCol = document.createElement("td");
-    //const imageCol = document.createElement("td");
-    const descriptionCol = document.createElement("td");
-    const categoryCol = document.createElement("td");
-    const priceCol = document.createElement("td");
-    const sellerCol = document.createElement("td");
-    const phonenumberCol = document.createElement("td");
-    const emailCol = document.createElement("td");
-    titleCol.textContent = advert.title;
-    descriptionCol.textContent = advert.description;
-    categoryCol.textContent = advert.category;
-    priceCol.textContent = advert.price.toString();
-    sellerCol.textContent = advert.seller;
-    phonenumberCol.textContent = advert.phonenumber;
-    emailCol.textContent = advert.email;
-    tr.append(...[titleCol, descriptionCol, categoryCol,
-         priceCol, sellerCol, phonenumberCol, emailCol]);
-    return tr;
+  const divForCards = document.getElementById("divForCards") as HTMLDivElement;
+  divForCards.textContent = "";
+  const adverts = await advertService.getAll();
+
+  const cards = adverts.map((advert) => {
+    const divCol = document.createElement("div");
+    divCol.className = "col-xl-3 col-md-4 col-sm-6";
+
+    const divCard = document.createElement("div");
+    divCard.className = "card";
+
+    const img = document.createElement("img");
+    img.className = "card-img-top";
+    img.src = advert.image;
+    img.alt = "Hirdetés képe";
+
+    const divCardBody = document.createElement("div");
+    divCardBody.className = "card-body";
+
+    const h3 = document.createElement("h3");
+    h3.className = "card-title";
+    h3.textContent = advert.title;
+
+    const p = document.createElement("p");
+    p.className = "card-text";
+    p.textContent = advert.description;
+
+    const ul = document.createElement("ul");
+    ul.className = "list-group list-group-flush";
+
+    const liCategory = document.createElement("li");
+    liCategory.className = "list-group-item";
+    liCategory.textContent = advert.category;
+
+    const liPrice = document.createElement("li");
+    liPrice.className = "list-group-item font-weight-bold";
+    liPrice.textContent = advert.price.toString() + " Ft";
+
+    ul.append(liCategory, liPrice);
+    divCardBody.append(h3, p);
+    divCard.append(img, divCardBody, ul);
+    divCol.append(divCard);
+
+    return divCol;
   });
-  advertTable.append(...tableRows);
+  divForCards.append(...cards);
 });
