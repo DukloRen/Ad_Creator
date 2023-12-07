@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     divCol.className = "col-xl-3 col-md-4 col-sm-6";
 
     const divCard = document.createElement("div");
+    divCard.style.backgroundColor="rgb(32, 189, 178)";
     divCard.className = "card";
 
     const img = document.createElement("img");
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const liCategory = document.createElement("li");
     liCategory.className = "list-group-item";
-    liCategory.textContent = advert.category;
+    liCategory.textContent = advert.category.substring(0,1).toUpperCase()+advert.category.substring(1);       //fontos mert a databaset nem akarjuk változtatni
 
     const liPrice = document.createElement("li");
     liPrice.className = "list-group-item font-weight-bold";
