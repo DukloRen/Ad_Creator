@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const img = document.createElement("img");
     img.className = "card-img-top";
-    img.src = advert.image;
+    img.src = advert.image+".png";
     img.alt = "Hirdetés képe";
 
     const divCardBody = document.createElement("div");
