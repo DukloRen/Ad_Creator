@@ -1,3 +1,7 @@
+/**
+ * Ez a typescript fájl segítségével jönnek létre a "hirdetés kártyák" a kezdőlapon,
+ * emellett itt van megvalósítva az index(Kezdőlap) oldalon található gombok, linkek működése.
+ */
 import { AdvertService } from "./main.ts";
 
 const advert_create_link = document.getElementById("advert_create_link") as HTMLLinkElement;
@@ -23,6 +27,10 @@ adatbazis_link.onclick = function() {
   window.open("https://retoolapi.dev/zmRnPM/advert_test_api", "_blank");
 }
 
+/**
+ * Ez a function tölti be a hirdetéseket a kezdőlapra és rakja őket "hirdetés kártyákba".
+ * @returns A kész "hirdetés kártya" tömbjét(div-jét).
+ */
 document.addEventListener("DOMContentLoaded", async () => {
   const divForCards = document.getElementById("divForCards") as HTMLDivElement;
   divForCards.textContent = "";
@@ -57,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const liCategory = document.createElement("li");
     liCategory.className = "list-group-item";
-    liCategory.textContent = advert.category.substring(0,1).toUpperCase()+advert.category.substring(1);       //fontos mert a databaset nem akarjuk változtatni
+    liCategory.textContent = advert.category.substring(0,1).toUpperCase()+advert.category.substring(1);
 
     const liPrice = document.createElement("li");
     liPrice.className = "list-group-item font-weight-bold";

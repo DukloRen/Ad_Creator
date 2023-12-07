@@ -1,4 +1,6 @@
-//npx typedoc --entryPointStrategy expand ./src
+/**
+ * @hidden npx typedoc --entryPointStrategy expand ./src
+ */
 /**
  *  Hirdetés tulajdonságait leíró interface.
  */

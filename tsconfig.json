@@ -19,5 +19,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "interfaces/advert_interface.ts"]
+    /*"typedocOptions": {
+        "entryPoints": ["src/index.ts"],
+        "out": "docs"
+    },*/
+  "include": ["src", "interfaces/advert_interface.ts"],
+
 }

@@ -1,11 +1,19 @@
+/**
+ * Ez a typescript fájl generálja az Advert class-t és annak a konstruktorát,
+ * ezen felül itt vannak a hirdetés készítő form kitöltésénél szükséges regexek és ellenőrzések,
+ * amik ellenőrzik, hogy a megadott adatok(input value-k) helyes formátumúak-e.
+ */
 import  { AdvertInterfaceDTO }  from "../interfaces/advert_interfaceDTO.ts";
 
 const regexName = /^[a-zöüóőúűéáí]+ [a-z öüóőúűéáí]+$/i;
 const regexEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
 const regexPhonenumber = /^\+[0-9 ]{11,}$/;
 
+/**
+ * Az Advert class a hirdetés létrehozásához szükséges adatokat tartalmazza, a konstruktorban pedig ellenőrzi őket.
+ * @implements AdvertInterfaceDTO
+ */
 export class Advert implements AdvertInterfaceDTO {
-    //public id: number;
     public title: string;
     public image: string;
     public description: string;
@@ -16,7 +24,7 @@ export class Advert implements AdvertInterfaceDTO {
     public email: string;
     public terms_and_conditions: boolean;
 
-    constructor(/*id: number,*/title: string, image: string, description: string, category: string,
+    constructor(title: string, image: string, description: string, category: string,
         price: number, seller: string, phonenumber: string, email: string, terms_and_conditions: boolean) {
         
         if (title.trim() == "") {
@@ -42,7 +50,6 @@ export class Advert implements AdvertInterfaceDTO {
         } else if (terms_and_conditions == false) {
             throw new Error("A hirdetés feladásához fogadja el a Felhasználói- és az Adatvédelmi szabályzatot!");
         } else {
-            //this.id = id;
             this.title = title;
             this.image = image;
             this.description = description;
