@@ -14,16 +14,55 @@ const regexPhonenumber = /^\+[0-9 ]{11,}$/;
  * @implements AdvertInterfaceDTO
  */
 export class Advert implements AdvertInterfaceDTO {
+    /**
+     * Hirdetés címe
+     */
     public title: string;
+    /**
+     * Hirdetés képe
+     */
     public image: string;
+    /**
+     * Hirdetés leírása
+     */
     public description: string;
+    /**
+     * Hirdetés kategóriája
+     */
     public category: string;
+    /**
+     * Hirdetés ára
+     */
     public price: number;
+    /**
+     * Hirdető neve
+     */
     public seller: string;
+    /**
+     * Hirdető telefonszáma
+     */
     public phonenumber: string;
+    /**
+     * Hirdető email címe
+     */
     public email: string;
+    /**
+     * Felhasználói és Adatvédelmi szabályzat
+     */
     public terms_and_conditions: boolean;
 
+    /**
+     * Advert class konstruktora, validációval.
+     * @param title Hirdetés címe
+     * @param image Hirdetés képe
+     * @param description Hirdetés leírása
+     * @param category Hirdetés kategóriája
+     * @param price Hirdetés ára
+     * @param seller Hirdető neve
+     * @param phonenumber Hirdető telefonszáma
+     * @param email Hirdető email címe
+     * @param terms_and_conditions Felhasználói és Adatvédelmi szabályzat
+     */
     constructor(title: string, image: string, description: string, category: string,
         price: number, seller: string, phonenumber: string, email: string, terms_and_conditions: boolean) {
         

@@ -1,7 +1,4 @@
 /**
- * @hidden npx typedoc --entryPointStrategy expand ./src
- */
-/**
  *  Hirdetés tulajdonságait leíró interface.
  */
 export default interface AdvertInterface {

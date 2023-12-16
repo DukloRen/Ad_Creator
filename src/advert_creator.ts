@@ -55,9 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputEmail: string = (document.getElementById("inputEmail") as HTMLInputElement).value;
     const inputTAC: boolean = (document.getElementById("inputTAC") as HTMLInputElement).checked;
 
-  /**
-   * Ez a try-catch páros megpróbálja létrehozni a hirdetést az adatbázisban az AdvertService osztály Add() function-jének segítségével, ha nem sikerül, akkor hibaüzenetet dob.
-   */
+    /**
+     * Ez a try-catch páros megpróbálja létrehozni a hirdetést az adatbázisban az AdvertService osztály Add() function-jének segítségével, ha nem sikerül, akkor hibaüzenetet dob.
+     */
     try {
       const newAdvert: Advert = new Advert(inputTitle, inputImage, inputDescription, inputCategory, inputPrice, inputSeller, inputPhoneNumber, inputEmail, inputTAC);
       const advertService = new AdvertService();
